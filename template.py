@@ -2,19 +2,19 @@
 DAY = 1
 
 
-def solve_part1(inputs: list[str]):
+def solve_part1(inputs: list[str]) -> int:
     pass
 
 
-def solve_part2(inputs: list[str]):
+def solve_part2(inputs: list[str]) -> int:
     pass
 
 
-def solve(desc, file):
-    with open(file, 'r') as dayinputs:
-        _ = dayinputs.readlines()
-    print(f'{desc}, part 1:', solve_part1(_))
-    print(f'{desc}, part 2:', solve_part2(_))
+def solve(desc: str, filename: str):
+    with open(filename, 'r') as file:
+        inputs = file.readlines()
+    print(f'{desc}, part 1:', solve_part1(inputs))
+    print(f'{desc}, part 2:', solve_part2(inputs))
 
 
 if __name__ == '__main__':
